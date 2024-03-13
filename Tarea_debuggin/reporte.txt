@@ -1,0 +1,15 @@
+El código inicialmente presentaba problemas en la función foo dado que habían divisiones por cero en la linea 21
+Lo anterior debido a los valores recibidos de ii y jj, para ésto se podría cambiar los valores de éstas variables,
+sin embargo, para tener un código general se hizo uso de un condicional que verificaba que nunguno de los divisores 
+fuera cero cómo se observa en la linea 23 del nuevo codigo.
+
+Por otra parte, al usar unsigned en la linea 26 del codigo se define una variable sólo con valores enteros positivos.
+Por lo que, al inicializar la variable con un valor negativo se generaba un overflow. Para ésto se hizo uso de un un condicional 
+que en caso de inicializar con un valor negativo se multiplicara con -1 para obtener el valor absoluto cómo se ve en la linea 36.
+
+Igualmente al compilar con la bandera -Wall indicaba que no se hacía uso la variable v definida en la linea 33, por lo que se puede 
+prescindir de la misma.
+
+Finalmente se arreglaron algunos pequños errores cómo que no se retornaba nada en la linea 32, por lo que se suprimió, y tambien 
+la falta de un ; al final de una declaración en la linea 34.
+
